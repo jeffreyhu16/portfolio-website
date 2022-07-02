@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import HomeButton from './subComponents/HomeButton';
 import SocialIcons from './subComponents/SocialIcons';
+import Logo from './subComponents/Logo';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -14,6 +15,7 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
     padding: 2rem;
+    height: 100vh;
 `
 
 const Work = styled(NavLink)`
@@ -38,9 +40,15 @@ const Skills = styled(NavLink)`
     z-index: 1;
 `
 
-const BottomBar = styled.div`
+const Center = styled.button`
+    position: absolute;
+    top: 50%;
+    left: 50;
+    transform: translate(-50%, -50%);
 
 `
+
+
 
 export default function Main() {
     return (
@@ -48,6 +56,7 @@ export default function Main() {
             <Container>
                 <HomeButton />
                 <SocialIcons />
+                <Logo />
                 <Work to='/work'>
                     <h2>Work</h2>
                 </Work>
