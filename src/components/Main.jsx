@@ -22,14 +22,14 @@ const Work = styled(NavLink)`
     color: ${props => props.theme.text};
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: 0;
     transform: rotate(270deg);
     text-decoration: none;
     z-index: 1;
 `
 
 const About = styled(NavLink)`
-    color: ${props => props.theme.text};
+    color: ${props => props.click ? props.theme.body : props.theme.text};
     text-decoration: none;
     z-index: 1;
 `
@@ -40,28 +40,38 @@ const Skills = styled(NavLink)`
     z-index: 1;
 `
 
-const Center = styled.button`
-    position: absolute;
-    top: 50%;
-    left: 50;
-    transform: translate(-50%, -50%);
-
-`
-
-
-
 export default function Main() {
+
+    const [click, setClick] = React.useState(false);
+
+    const logoStyles = {
+        top: click ? '80%' : '50%',
+        left: click ? '92%' : '50%'
+    }
+
+    const darkHalfStyles = {
+        width: click ? '50%' : '0%',
+        height: click ? '100%' : '0%'
+    }
+
     return (
         <MainContainer>
             <Container>
+                <div className='dark-half' style={darkHalfStyles}></div>
                 <HomeButton />
-                <SocialIcons />
-                <Logo />
-                <Work to='/work'>
-                    <h2>Work</h2>
+                <SocialIcons theme={click ? 'dark' : 'light'} />
+                <div
+                    className='logo-container'
+                    style={logoStyles}
+                    onClick={() => setClick(!click)}
+                >
+                    <Logo />
+                </div>
+                <Work to='/projects'>
+                    <h2>Projects</h2>
                 </Work>
                 <div className='bottom-bar'>
-                    <About to='/about'>
+                    <About click={click} to='/about'>
                         <h2>About</h2>
                     </About>
                     <Skills to='/skills'>

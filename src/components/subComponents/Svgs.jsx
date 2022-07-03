@@ -1,12 +1,10 @@
 export const Github = (props) => {
     return (
         <svg
-            width="25"
-            height="25"
             aria-hidden="true"
             data-prefix="fab"
             data-icon="github"
-            className="prefix__svg-inline--fa prefix__fa-github prefix__fa-w-16"
+            className="svg-social"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
             {...props}
@@ -22,9 +20,8 @@ export const Github = (props) => {
 export const LinkedIn = (props) => {
     return (
         <svg
-            width="25"
-            height="25"
             data-icon="linkedIn"
+            className="svg-social"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             {...props}
@@ -39,10 +36,9 @@ export const LinkedIn = (props) => {
 export const Discord = (props) => {
     return (
         <svg
-            width="25"
-            height="25"
             data-icon="discord"
             viewBox="0 0 71 55"
+            className="svg-social discord"
             xmlns="http://www.w3.org/2000/svg"
             // clip-rule="evenodd"
             {...props}

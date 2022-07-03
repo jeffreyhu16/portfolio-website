@@ -16,9 +16,9 @@ export default function Logo() {
     }
 
     return (
-        <Canvas className='logo' camera={{ fov: 50 }}>
+        <Canvas className='logo' camera={{ fov: 15 }}>
             <Suspense>
-                <directionalLight intensity={0.7} position={[0, 0, 10]} />
+                <directionalLight intensity={0.5} position={[0, 0, 10]} />
                 <Model />
             </Suspense>
         </Canvas>

@@ -1,20 +1,7 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Discord, Github, LinkedIn } from './Svgs';
-
-const Icons = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 2rem;
-    z-index: 3;
-    &>*:not(:last-child) {
-        margin: 0.5rem 0;
-    }
-`
+import { darkTheme } from '../../Themes';
 
 const Line = styled.span`
     width: 2px;
@@ -22,29 +9,23 @@ const Line = styled.span`
     background-color: ${props => props.theme.text};
 `
 
-const styles = {
-    color: 'inherit'
-}
+export default function SocialIcons(props) {
 
-export default function SocialIcons() {
+    const { theme } = props;
+
+    const fillColor = theme === 'dark' ? darkTheme.text : darkTheme.body;
+
     return (
-        <Icons>
-            <div>
-                <a style={styles} target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
-                    <Github />
-                </a>
-            </div>
-            <div>
-                <a style={styles} target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
-                    <LinkedIn />
-                </a>
-            </div>
-            <div>
-                <a style={styles} target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
-                    <Discord />
-                </a>
-            </div>
-            <Line />
-        </Icons>
+        <div className='socials-container'>
+            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+                <Github fill={fillColor} />
+            </a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+                <LinkedIn fill={fillColor} />
+            </a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+                <Discord fill={fillColor} />
+            </a>
+        </div>
     )
 }
