@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import HomeButton from './subComponents/HomeButton';
 import SocialIcons from './subComponents/SocialIcons';
 import Logo from './subComponents/Logo';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const MainContainer = styled.div`
     background: ${props => props.theme.body};
@@ -18,26 +19,40 @@ const Container = styled.div`
     height: 100vh;
 `
 
-const Work = styled(NavLink)`
+const Projects = styled(NavLink)`
     color: ${props => props.theme.text};
     position: absolute;
     top: 50%;
     right: 0;
-    transform: rotate(270deg);
+    transform: rotate(-90deg) translateX(18px);
     text-decoration: none;
-    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 2;
 `
 
 const About = styled(NavLink)`
-    color: ${props => props.click ? props.theme.body : props.theme.text};
+    color: ${props => props.click.color};
     text-decoration: none;
-    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 `
 
 const Skills = styled(NavLink)`
     color: ${props => props.theme.text};
     text-decoration: none;
-    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+`
+
+const CornersLeft = styled.div`
+    border: ${props => props.click.border};
+    background-color: ${props => props.click.backgroundColor};
+    &:before {
+        width: ${props => props.click.beforeWidthHeight};
+        height: ${props => props.click.beforeWidthHeight};
+        background-color: ${props => props.click.backgroundColor};
+    }
 `
 
 export default function Main() {
@@ -54,12 +69,19 @@ export default function Main() {
         height: click ? '100%' : '0%'
     }
 
+    const clickStyles = {
+        color: click ? '#dcdcdc' : '#000',
+        backgroundColor: click ? '#000' : '#dcdcdc',
+        border: click ? '1px solid #dcdcdc' : '1px solid #000',
+        beforeWidthHeight: click ? 'calc(100% + 4px)' : '0%'
+    }
+
     return (
         <MainContainer>
             <Container>
                 <div className='dark-half' style={darkHalfStyles}></div>
                 <HomeButton />
-                <SocialIcons theme={click ? 'dark' : 'light'} />
+                <SocialIcons click={click} />
                 <div
                     className='logo-container'
                     style={logoStyles}
@@ -67,17 +89,33 @@ export default function Main() {
                 >
                     <Logo />
                 </div>
-                <Work to='/projects'>
+                <Projects to='/projects' className='projects-header'>
                     <h2>Projects</h2>
-                </Work>
+                </Projects>
                 <div className='bottom-bar'>
-                    <About click={click} to='/about'>
+                    <About to='/about' click={clickStyles} className='about-header'>
                         <h2>About</h2>
                     </About>
                     <Skills to='/skills'>
                         <h2>Skills</h2>
                     </Skills>
                 </div>
+                <ArrowBackIosIcon
+                    sx={{ fontSize: '3rem', color: click ? '#dcdcdc' : '#000' }}
+                    className='icon-corner top-left-corner'
+                />
+                <ArrowBackIosIcon
+                    sx={{ fontSize: '3rem' }}
+                    className='icon-corner top-right-corner'
+                />
+                <ArrowBackIosIcon
+                    sx={{ fontSize: '3rem', color: click ? '#dcdcdc' : '#000' }}
+                    className='icon-corner bottom-left-corner'
+                />
+                <ArrowBackIosIcon
+                    sx={{ fontSize: '3rem' }}
+                    className='icon-corner bottom-right-corner'
+                />
             </Container>
         </MainContainer>
     )

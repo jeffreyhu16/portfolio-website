@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Discord, Github, LinkedIn } from './Svgs';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { darkTheme } from '../../Themes';
 
 const Line = styled.span`
@@ -11,9 +12,9 @@ const Line = styled.span`
 
 export default function SocialIcons(props) {
 
-    const { theme } = props;
+    const { click } = props;
 
-    const fillColor = theme === 'dark' ? darkTheme.text : darkTheme.body;
+    const fillColor = click ? darkTheme.text : darkTheme.body;
 
     return (
         <div className='socials-container'>
@@ -25,6 +26,9 @@ export default function SocialIcons(props) {
             </a>
             <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
                 <Discord fill={fillColor} />
+            </a>
+            <a className='icon-email'>
+                <MailOutlineIcon sx={{ fontSize: '2rem', color: fillColor }} />
             </a>
         </div>
     )

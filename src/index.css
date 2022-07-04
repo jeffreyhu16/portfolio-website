@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
     overflow-x: hidden;
 }
 
@@ -16,13 +16,47 @@ h3 {
     margin: 0;
 }
 
+.icon-corner {
+    position: fixed;
+    z-index: 2;
+}
+
+.icon-email {
+    height: 2rem;
+    cursor: pointer;
+}
+
+.top-left-corner {
+    top: 2rem;
+    left: 2rem;
+    transform: rotate(45deg);
+}
+
+.top-right-corner {
+    top: 2rem;
+    right: 2rem;
+    transform: rotate(135deg);
+}
+
+.bottom-left-corner {
+    bottom: 2rem;
+    left: 2rem;
+    transform: rotate(-45deg);
+}
+
+.bottom-right-corner {
+    bottom: 2rem;
+    right: 2rem;
+    transform: rotate(-135deg);
+}
+
 .svg-social {
     width: 2rem;
     margin-bottom: 0.8em;
 }
 
 .discord {
-    margin: 0;
+    margin: 0.1rem 0 0.6em;
 }
 
 .logo-container {
@@ -32,6 +66,7 @@ h3 {
     cursor: pointer;
     transition: ease 1s;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .dark-half {
@@ -53,13 +88,14 @@ h3 {
     transform: translateX(-50%);
     border-radius: 50%;
     border: 1px solid #000;
-    z-index: 3;
     cursor: pointer;
+    background-color: #dcdcdc;
+    z-index: 3;
 }
 
 .button-home:hover {
-    box-shadow: 
-        0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
+    box-shadow:
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2),
         0px 2px 5px 0px rgba(0, 0, 0, 0.14),
         0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
@@ -77,10 +113,46 @@ h3 {
 
 .bottom-bar {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     left: 0;
     right: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: 3;
+}
+
+.aboutHeader-7-2-14 {
+    text-decoration: none;
+}
+
+.corners-left,
+.corner-right {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    transition: height 0.3s ease, width 1s ease 0.3s;
+}
+
+.corners-left:before,
+.corner-right:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    /* height: calc(100% + 4px);
+    width: calc(100% + 4px); */
+    transition: height 0.3s ease, width 1s ease 0.3s;
+}
+
+.corners-left:before {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.corner-right:before {
+    border-bottom-right-radius: 10%;
+    border-top-right-radius: 10%;
 }
