@@ -10,8 +10,7 @@ export default function Logo() {
     
         useFrame(({ clock }) => {
             ref.current.rotation.y = clock.getElapsedTime()
-        })
-    
+        });
         return <primitive ref={ref} object={gltf.scene} />
     }
 

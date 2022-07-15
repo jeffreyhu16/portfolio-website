@@ -59,6 +59,11 @@ h3 {
     margin: 0.1rem 0 0.6em;
 }
 
+.avatar-container {
+    width: 20%;
+    height: 40%;
+}
+
 .logo-container {
     position: absolute;
     width: 10%;

@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import HomeButton from './subComponents/HomeButton';
 import SocialIcons from './subComponents/SocialIcons';
 import Logo from './subComponents/Logo';
+// import Avatar from './avatar.png';
+import Intro from './Intro';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 const MainContainer = styled.div`
@@ -116,6 +118,10 @@ export default function Main() {
                     sx={{ fontSize: '3rem' }}
                     className='icon-corner bottom-right-corner'
                 />
+                {click && <Intro />}
+                <div className="avatar-container">
+                    <img src='avatar.png' />
+                </div>
             </Container>
         </MainContainer>
     )
