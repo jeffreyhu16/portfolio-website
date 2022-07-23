@@ -16,6 +16,10 @@ h3 {
     margin: 0;
 }
 
+h1 {
+    font-size: calc(2rem + 1.5vw);
+}
+
 .icon-corner {
     position: fixed;
     z-index: 2;
@@ -24,6 +28,20 @@ h3 {
 .icon-email {
     height: 2rem;
     cursor: pointer;
+}
+
+.avatar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .top-left-corner {
@@ -57,11 +75,6 @@ h3 {
 
 .discord {
     margin: 0.1rem 0 0.6em;
-}
-
-.avatar-container {
-    width: 20%;
-    height: 40%;
 }
 
 .logo-container {
@@ -160,4 +173,67 @@ h3 {
 .corner-right:before {
     border-bottom-right-radius: 10%;
     border-top-right-radius: 10%;
+}
+
+.intro-container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 50vh;
+    z-index: 1;
+}
+
+.intro-sub-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro-text {
+    padding: 2rem;
+    height: 65%;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.intro-text-name {
+    font-size: calc(1rem + 1.5vw);
+}
+
+.intro-text-desc {
+    font-size: calc(0.6rem + 1vw);
+}
+
+.skills-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-content {
+    padding: 2rem;
+    width: 30vw;
+    height: 60vh;
+    flex-direction: column;
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.skills-content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + 1vw);
+}
+
+.skills-content-desc {
+    font-size: calc(0.6em + 1vw);
+    padding: 0.5em 0;
 }
