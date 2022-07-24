@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { Discord, Github, LinkedIn } from './Svgs';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { darkTheme } from '../../Themes';
@@ -18,13 +19,25 @@ export default function SocialIcons(props) {
 
     return (
         <div className='socials-container'>
-            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+            <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://github.com/jeffreyhu16'
+            >
                 <Github fill={fillColor} />
             </a>
-            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+            <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://github.com/jeffreyhu16'
+            >
                 <LinkedIn fill={fillColor} />
             </a>
-            <a target='_blank' rel='noreferrer' href='https://github.com/jeffreyhu16'>
+            <a
+                target='_blank'
+                rel='noreferrer'
+                href='https://github.com/jeffreyhu16'
+            >
                 <Discord fill={fillColor} />
             </a>
             <a className='icon-email'>

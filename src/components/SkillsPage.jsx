@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SocialIcons from './subComponents/SocialIcons';
 
 const Box = styled.div`
     background-color: ${props => props.theme.body};
@@ -20,17 +21,19 @@ const Description = styled.div`
 
 `
 
-export default function SkillsPage() {
+export default function SkillsPage(props) {
+
     return (
         <Box className='skills-container'>
+            <SocialIcons click={false} />
             <Main className='skills-content flex'>
-                <Title className='skills-content-title'>Skills</Title>
+                <Title className='skills-content-title'>Frontend</Title>
                 <Description className='skills-content-desc'>
 
                 </Description>
             </Main>
             <Main className='skills-content flex'>
-                <Title className='skills-content-title'>Skills</Title>
+                <Title className='skills-content-title'>Blockchain</Title>
                 <Description className='skills-content-desc'>
                     
                 </Description>

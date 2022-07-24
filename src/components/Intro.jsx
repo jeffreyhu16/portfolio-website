@@ -37,13 +37,7 @@ export default function Intro() {
                 </Text>
             </div>
             <div className='intro-sub-container'>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 1 }}
-                >
-                    <img className='avatar' src='avatar.png' />
-                </motion.div>
+                <img className='avatar' src='avatar.png' />
             </div>
         </Box>
     )
