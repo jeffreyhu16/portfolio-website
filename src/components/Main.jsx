@@ -45,7 +45,7 @@ const Skills = styled(NavLink)`
     letter-spacing: 1px;
 `
 
-export default function Main(props) {
+export default function Main(props) { 
 
     const { click, setClick } = props;
 

@@ -10,6 +10,10 @@ const Main = styled.div`
     border: 2px solid ${props => props.theme.text};
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.body};
+    &:hover {
+        color: ${props => props.theme.body};
+        background-color: ${props => props.theme.text};
+    }
 `
 
 const Title = styled.div`

@@ -1,13 +1,18 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
 import HomeIcon from '@mui/icons-material/Home';
+import { NavLink } from 'react-router-dom';
 
 export default function HomeButton() {
     return (
-        <div className='button-home'>
-            {/* <FontAwesomeIcon icon={faHouse} className='icon-home' /> */}
-            <HomeIcon sx={{ fontSize: 32 }} />
-        </div>
+        <NavLink className='button-home-container' to='/'>
+            <motion.button
+                className='button-home'
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+            >
+                <HomeIcon className='icon-home' sx={{ fontSize: 32 }} />
+            </motion.button>
+        </NavLink>
     )
 }

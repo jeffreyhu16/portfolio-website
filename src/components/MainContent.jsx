@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from './subComponents/Logo';
 import Intro from './Intro';
-import MainHOC from './Main';
 
 export default function MainContent(props) {
 
@@ -9,7 +8,7 @@ export default function MainContent(props) {
 
     const logoStyles = {
         top: click ? '80%' : '50%',
-        left: click ? '92%' : '50%'
+        left: click ? '91%' : '50%'
     }
 
     const darkHalfStyles = {
