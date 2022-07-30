@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Particle from './subComponents/Particle';
 import SocialIcons from './subComponents/SocialIcons';
 
 const Box = styled.div`
@@ -42,6 +43,7 @@ export default function SkillsPage(props) {
                     
                 </Description>
             </Main>
+            <Particle />
         </Box>
     )
 }
