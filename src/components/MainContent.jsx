@@ -26,6 +26,7 @@ export default function MainContent(props) {
             >
                 <Logo />
             </div>
+            {!click && <img src='up-arrow.svg' className='icon-up-arrow'></img>}
             {click && <Intro />}
         </>
     )

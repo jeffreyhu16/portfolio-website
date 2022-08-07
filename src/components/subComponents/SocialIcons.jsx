@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Discord, Github, LinkedIn } from './Svgs';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { darkTheme } from '../../Themes';
+import { darkTheme } from '../../themes';
 
 const Line = styled.span`
     width: 2px;
@@ -13,9 +13,9 @@ const Line = styled.span`
 
 export default function SocialIcons(props) {
 
-    const { click } = props;
+    const { theme, click } = props;
 
-    const fillColor = click ? darkTheme.text : darkTheme.body;
+    const fillColor = click ? theme.body : theme.text;
 
     return (
         <div className='socials-container'>

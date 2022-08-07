@@ -16,7 +16,7 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
     padding: 2rem;
-    height: 100vh;
+    height: 100%;
 `
 
 const Projects = styled(NavLink)`
@@ -45,12 +45,12 @@ const Skills = styled(NavLink)`
     letter-spacing: 1px;
 `
 
-export default function Main(props) { 
+export default function Main(props) {
 
-    const { click, setClick } = props;
+    const { theme, click, setClick } = props;
 
     const clickStyles = {
-        color: click ? '#dcdcdc' : '#000',
+        color: click ? theme.body : theme.text,
     }
 
     return (
@@ -58,8 +58,8 @@ export default function Main(props) {
             <Container>
                 {props.children}
                 <HomeButton />
-                <SocialIcons click={click} />
-                <Projects to='/projects' className='projects-header'>
+                <SocialIcons theme={theme} click={click} />
+                <Projects to='/projects' theme={theme} className='projects-header'>
                     <motion.h2
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -76,7 +76,7 @@ export default function Main(props) {
                             About
                         </motion.h2>
                     </About>
-                    <Skills to='/skills'>
+                    <Skills to='/skills' theme={theme}>
                         <motion.h2
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
@@ -86,19 +86,19 @@ export default function Main(props) {
                     </Skills>
                 </div>
                 <ArrowBackIosIcon
-                    sx={{ fontSize: '3rem', color: click ? '#dcdcdc' : '#000' }}
+                    sx={{ fontSize: '3rem', color: click ? theme.body : theme.text }}
                     className='icon-corner top-left-corner'
                 />
                 <ArrowBackIosIcon
-                    sx={{ fontSize: '3rem' }}
+                    sx={{ fontSize: '3rem', color: theme.text }}
                     className='icon-corner top-right-corner'
                 />
                 <ArrowBackIosIcon
-                    sx={{ fontSize: '3rem', color: click ? '#dcdcdc' : '#000' }}
+                    sx={{ fontSize: '3rem', color: click ? theme.body : theme.text }}
                     className='icon-corner bottom-left-corner'
                 />
                 <ArrowBackIosIcon
-                    sx={{ fontSize: '3rem' }}
+                    sx={{ fontSize: '3rem', color: theme.text }}
                     className='icon-corner bottom-right-corner'
                 />
             </Container>

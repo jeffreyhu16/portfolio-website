@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Particle from './subComponents/Particle';
+import LinkParticle from './subComponents/LinkParticle';
 import SocialIcons from './subComponents/SocialIcons';
 
 const Box = styled.div`
@@ -28,9 +28,10 @@ const Description = styled.div`
 
 export default function SkillsPage(props) {
 
+    const { theme } = props;
+
     return (
         <Box className='skills-container'>
-            <SocialIcons click={false} />
             <Main className='skills-content flex'>
                 <Title className='skills-content-title'>Frontend</Title>
                 <Description className='skills-content-desc'>
@@ -43,7 +44,7 @@ export default function SkillsPage(props) {
                     
                 </Description>
             </Main>
-            <Particle />
+            <LinkParticle />
         </Box>
     )
 }
