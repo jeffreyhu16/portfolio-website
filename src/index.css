@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
 }
 
 body {
@@ -234,15 +234,19 @@ h1 {
 .intro-text {
     padding: 2rem;
     flex-direction: column;
-    cursor: pointer;
     animation-name: show;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: both;
 }
 
+.intro-text-header {
+    margin-bottom: 1vh;
+}
+
 .intro-text-name {
     font-size: calc(1rem + 1.5vw);
+    margin-bottom: 1vh;
 }
 
 .intro-text-desc {
@@ -397,8 +401,8 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 67rem;
-    overflow-x: auto;
+    width: 68.1rem;
+    overflow-x: hidden;
     display: flex;
     color: #fff;
 }
@@ -461,7 +465,7 @@ h1 {
 }
 
 .project-card-github-link {
-
+    margin-left: 0.8em;
 }
 
 .project-card-github-link .svg-social {

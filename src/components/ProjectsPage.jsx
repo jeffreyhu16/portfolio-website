@@ -5,22 +5,17 @@ import ProjectCard from './subComponents/ProjectCard';
 
 export default function ProjectsPage() {
 
-    const ref = React.useRef(null);
+    const elementRef = React.useRef(null);
 
     React.useEffect(() => {
-        // const element = ref.current;
-
-        // const rotate = () => {
-        //     console.log('scrolling...');
-        //     element.style.transform = `translateX(${-window.scrollY}px)`;
-        // }
-
-        // window.addEventListener('scroll', rotate);
-
-        // return () => {
-        //     window.removeEventListener('scroll', rotate);
-        // }
+        elementRef.current.addEventListener('wheel', handleWheel);
     }, []);
+
+
+    const handleWheel = e => {
+        e.preventDefault();
+        elementRef.current.scrollLeft += e.deltaY;
+    }
 
     const workDataArray = workData.map(item => {
         return (
@@ -31,7 +26,7 @@ export default function ProjectsPage() {
     return (
         <div className='projects-container'>
             <SnowParticle />
-            <div className="projects-content">{workDataArray}</div>
+            <div className="projects-content" ref={elementRef}>{workDataArray}</div>
         </div>
     )
 }

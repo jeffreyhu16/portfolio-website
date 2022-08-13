@@ -31,7 +31,7 @@ export default function Intro() {
         >
             <div className='intro-sub-container'>
                 <Text className='intro-text flex'>
-                    <h1>Welcome,</h1>
+                    <h1 className='intro-text-header'>Welcome,</h1>
                     <div className='intro-text-name'>I'm Jeffrey</div>
                     <div className='intro-text-desc'>A Blockchain Developer with a passion for Web3</div>
                 </Text>
