@@ -48,6 +48,11 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.icon-bullet-point {
+    width: 0.5em;
+    margin-right: 0.3em;
+}
+
 .img-solidity {
     width: 200px;
 }
@@ -271,15 +276,20 @@ h1 {
 }
 
 .skills-content-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-weight: 600;
     font-size: calc(1rem + 1vw);
+    margin-bottom: 2rem;
 }
 
 .skills-content-desc {
-    font-size: calc(0.6em + 1vw);
-    padding: 0.5em 0;
+    font-size: 1.5rem;
+}
+
+.skills-point-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5em;
 }
 
 .particle-container {
