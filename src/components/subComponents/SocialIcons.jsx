@@ -29,14 +29,14 @@ export default function SocialIcons(props) {
             <a
                 target='_blank'
                 rel='noreferrer'
-                href='https://github.com/jeffreyhu16'
+                href='https://www.linkedin.com/in/jeffrey-hu-958391102/'
             >
                 <LinkedIn fill={fillColor} />
             </a>
             <a
                 target='_blank'
                 rel='noreferrer'
-                href='https://github.com/jeffreyhu16'
+                href='https://discordapp.com/users/909326422659694603'
             >
                 <Discord fill={fillColor} />
             </a>

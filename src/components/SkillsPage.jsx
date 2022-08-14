@@ -35,7 +35,7 @@ export default function SkillsPage(props) {
             <Main className='skills-content flex'>
                 <Title className='skills-content-title'>Frontend</Title>
                 <Description className='skills-content-desc'>
-
+                    
                 </Description>
             </Main>
             <Main className='skills-content flex'>

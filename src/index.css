@@ -401,14 +401,14 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 68.1rem;
+    width: 67rem;
     overflow-x: hidden;
     display: flex;
     color: #fff;
 }
 
 .project-card {
-    width: 18rem;
+    width: 17rem;
     height: 22rem;
     color: #000;
     background-color: #dcdcdc;
@@ -429,7 +429,8 @@ h1 {
 }
 
 .project-card-title {
-    font-size: calc(1rem + 0.5vw);
+    text-transform: uppercase;
+    /* letter-spacing: 0.5px; */
 }
 
 .project-card-desc {
@@ -444,7 +445,6 @@ h1 {
 }
 
 .project-card-tag {
-    font-size: calc(0.8em + 0.3vw);
     margin-right: 1rem;
 }
 
@@ -455,11 +455,11 @@ h1 {
 }
 
 .project-card-demo-link {
-    font-size: calc(1em + 0.5vw);
+    font-size: 1.4rem;
     color: #dcdcdc;
     background-color: #000;
     text-decoration: none;
-    padding: 0.2em 2.6em 0.3em 2.6em;
+    padding: 0.2em 2.5em 0.3em 2.5em;
     border-radius: 0 0 0 50px;
     transition: 200ms ease;
 }

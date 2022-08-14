@@ -1,38 +1,38 @@
 export const workData = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","redux"],
+        name:"Class Scheduler",
+        description:"Calendar app designed specifically for a real business owner to schedule tennis classes, which includes a customized multi-level timetable user interface.",
+        tags:["React","Node.js","MongoDB"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://neon-taffy-ab756e.netlify.app",
+        github:"https://github.com/jeffreyhu16/class-scheduler-client"
     },
     {
         id:2,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","redux"],
+        name:"Material Price Tracker",
+        description:"Raw material price tracking app developed for a real restaurant chain. This prototype provides price updates from markets ranging from agriculture to seafood.",
+        tags:["React","Node.js","MySQL"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"http://preek.foresii.com/login",
+        github:""
     },
     {
         id:3,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","redux"],
+        name:"Insurance Dapp",
+        description:"Decentralized Insurance providing platform inspired by Nexus Mutual. Users are able to purchase covers for a wide range of DeFi protocols and participate in voting.",
+        tags:["React","Ethers.js","Hardhat"],
         
         demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        github:"https://github.com/jeffreyhu16/insurance-dapp"
     },
     {
         id:4,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","redux"],
+        name:"Eth Global Project",
+        description:"Coming Soon",
+        tags:["React","Ethers.js","Hardhat"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"",
+        github:""
     },
 ];

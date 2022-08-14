@@ -31,7 +31,7 @@ export default function ProjectCard(props) {
 
     return (
         <Box className='project-card'>
-            <div className='project-card-title'>{name}</div>
+            <h3 className='project-card-title'>{name}</h3>
             <div className='project-card-desc'>{description}</div>
             <div className='project-card-tag-container'>{tagsArray}</div>
             <div className='project-card-footer'>
