@@ -306,31 +306,29 @@ h1 {
     height: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.about-content {
-    position: absolute;
-    top: 50%;
-    left: 4em;
-    width: 50vw;
-    height: 60vh;
-    padding: 2em;
-    font-size: calc(0.6rem + 1vw);
-    border: 2px solid #dcdcdc;
-    transform: translateY(-50%);
-    backdrop-filter: blur(2px);
-    z-index: 3;
-    line-height: 1.5;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cube-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 4em;
+.about-content {
+    width: 50vw;
+    height: 60vh;
+    padding: 2em;
+    margin-right: 5vw;
+    color: #dcdcdc;
+    font-size: calc(0.6rem + 1vw);
+    border: 2px solid #dcdcdc;
+    backdrop-filter: blur(2px);
+    z-index: 3;
+    line-height: 1.5;
+}
+
+.about-content-paragraph {
+    margin-bottom: 1em;
+}
+
+.cube-container {   
     width: 400px;
     height: 400px;
     overflow: hidden;

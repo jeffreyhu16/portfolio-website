@@ -9,7 +9,17 @@ export default function AboutPage() {
     return (
         <div className='about-container'>
             <StarParticle />
-            <div className='about-content'></div>
+            <div className='about-content'>
+                <div className='about-content-paragraph'>
+                    I'm a passionate blockchain developer located in Taiwan. My programming journey started last year in frontend development and gradually made my transition into the Web3 space.
+                </div>
+                <div className='about-content-paragraph'>
+                    I've built a solid foundation in frontend skills such as React, Javascript and CSS during the development of my first project, the Class Scheduler.
+                </div>
+                <div className='about-content-paragraph'>
+                    Ever since I started coding projects with team members, I have been gaining experience through interships and freelance while learning in demand skills for blockchain development.
+                </div>
+            </div>
             <div className="cube-container">
                 <div className='cube-spinner'>
                     <div className='face1'>

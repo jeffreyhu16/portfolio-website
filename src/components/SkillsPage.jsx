@@ -65,10 +65,33 @@ export default function SkillsPage(props) {
                     </div>
                 </Description>
             </Main>
-            <Main className='skills-content flex'>
+            <Main className='skills-content'>
                 <h2 className='skills-content-title'>Blockchain</h2>
                 <Description className='skills-content-desc'>
-
+                <div className="skills-point-container">
+                        <Bullet>
+                            <BulletPoint />
+                        </Bullet>
+                        <div className="skills-point">Developed and deployed smart contracts on Rinkeby Testnet</div>
+                    </div>
+                    <div className="skills-point-container">
+                        <Bullet>
+                            <BulletPoint />
+                        </Bullet>
+                        <div className="skills-point">Applied thorough Unit/Integration testing with Hardhat</div>
+                    </div>
+                    <div className="skills-point-container">
+                        <Bullet>
+                            <BulletPoint />
+                        </Bullet>
+                        <div className="skills-point">Created Governance and ERC721 tokens with OpenZeppelin Contracts</div>
+                    </div>
+                    {/* <div className="skills-point-container">
+                        <Bullet>
+                            <BulletPoint />
+                        </Bullet>
+                        <div className="skills-point">Integrated animations using Three.js with performance in mind</div>
+                    </div> */}
                 </Description>
             </Main>
             <LinkParticle />
