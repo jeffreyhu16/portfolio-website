@@ -59,7 +59,12 @@ export default function Main(props) {
                 {props.children}
                 <HomeButton />
                 <SocialIcons theme={theme} click={click} />
-                <Projects to='/projects' theme={theme} className='projects-header'>
+                <Projects
+                    to='/projects'
+                    theme={theme}
+                    className='projects-header'
+                    onClick={() => setClick(false)}
+                >
                     <motion.h2
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -68,7 +73,12 @@ export default function Main(props) {
                     </motion.h2>
                 </Projects>
                 <div className='bottom-bar'>
-                    <About to='/about' click={clickStyles} className='about-header'>
+                    <About
+                        to='/about'
+                        click={clickStyles}
+                        className='about-header'
+                        onClick={() => setClick(false)}
+                    >
                         <motion.h2
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
@@ -76,7 +86,11 @@ export default function Main(props) {
                             About
                         </motion.h2>
                     </About>
-                    <Skills to='/skills' theme={theme}>
+                    <Skills
+                        to='/skills'
+                        theme={theme}
+                        onClick={() => setClick(false)}
+                    >
                         <motion.h2
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
