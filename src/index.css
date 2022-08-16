@@ -283,7 +283,7 @@ h1 {
 }
 
 .skills-content-desc {
-    font-size: 1.5rem;
+    font-size: calc(0.4rem + 1vw);
 }
 
 .skills-point-container {
@@ -313,7 +313,6 @@ h1 {
 
 .about-content {
     width: 50vw;
-    height: 60vh;
     padding: 2em;
     margin-right: 5vw;
     color: #dcdcdc;
@@ -326,6 +325,10 @@ h1 {
 
 .about-content-paragraph {
     margin-bottom: 1em;
+}
+
+.about-content-paragraph:last-child {
+    margin: 0;
 }
 
 .cube-container {   
