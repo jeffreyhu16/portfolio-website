@@ -17,6 +17,10 @@ export default function SocialIcons(props) {
 
     const fillColor = click ? theme.body : theme.text;
 
+    const sendEmail = () => {
+        window.location.href = 'mailto:jeffreyhu16@gmail.com';
+    }
+
     return (
         <div className='socials-container'>
             <a
@@ -40,7 +44,7 @@ export default function SocialIcons(props) {
             >
                 <Discord fill={fillColor} />
             </a>
-            <a className='icon-email'>
+            <a className='icon-email' onClick={sendEmail}> 
                 <MailOutlineIcon sx={{ fontSize: '2rem', color: fillColor }} />
             </a>
         </div>
