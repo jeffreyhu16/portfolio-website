@@ -1,7 +1,5 @@
 import React from 'react';
 import StarParticle from './subComponents/StarParticle';
-import Planet from './subComponents/Planet';
-import PurpleEth from './subComponents/PurpleEth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faHtml5, faReact, faSquareJs } from '@fortawesome/free-brands-svg-icons';
 
@@ -17,7 +15,7 @@ export default function AboutPage() {
                     I've built a solid foundation in frontend skills such as React, Javascript and CSS during the development of my first project, the Class Scheduler.
                 </div>
                 <div className='about-content-paragraph'>
-                    Ever since I started coding projects with team members, I have been gaining experience through interships and freelance while learning in demand skills for blockchain development.
+                    Ever since I started coding projects with team members, I have been gaining experience through interships and freelance work while learning in demand skills for blockchain development.
                 </div>
             </div>
             <div className="cube-container">
