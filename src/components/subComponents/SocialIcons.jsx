@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Discord, Github, LinkedIn } from './Svgs';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import { darkTheme } from '../../themes';
+import { darkTheme } from '../../themes/themes';
 
 const Line = styled.span`
     width: 2px;
