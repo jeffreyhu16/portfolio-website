@@ -23,8 +23,8 @@ export const workData = [
         description:"Decentralized Insurance providing platform inspired by Nexus Mutual. Users are able to purchase covers for a wide range of DeFi protocols and participate in voting.",
         tags:["React","Ethers.js","Hardhat"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/jeffreyhu16/insurance-dapp"
+        demo:"",
+        github:"https://github.com/jeffreyhu16/insurance-project"
     },
     {
         id:4,
