@@ -15,7 +15,7 @@ export const workData = [
         tags:["React","Node.js","MySQL"],
         
         demo:"http://preek.foresii.com/login",
-        github:""
+        github:"javascript:void(0)"
     },
     {
         id:3,

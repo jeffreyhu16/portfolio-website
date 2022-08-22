@@ -36,7 +36,7 @@ export default function ProjectCard(props) {
             <div className='project-card-tag-container'>{tagsArray}</div>
             <div className='project-card-footer'>
                 <Demo className='project-card-demo-link' href={demo} target='_blank'>Demo</Demo>
-                <Git className='project-card-github-link' href={demo} target='_blank'>
+                <Git className='project-card-github-link' href={github} target='_blank'>
                     <Github />
                 </Git>
             </div>
