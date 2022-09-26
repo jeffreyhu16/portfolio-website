@@ -8,7 +8,6 @@ export default function HomeButton() {
         <NavLink className='button-home-container' to='/'>
             <motion.button
                 className='button-home'
-                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
             >
                 <HomeIcon className='icon-home' sx={{ fontSize: 32 }} />

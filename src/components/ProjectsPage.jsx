@@ -17,9 +17,9 @@ export default function ProjectsPage() {
         elementRef.current.scrollLeft += e.deltaY;
     }
 
-    const workDataArray = workData.map(item => {
+    const workDataArray = workData.map((item, i) => {
         return (
-            <ProjectCard id={item.id} data={item} />
+            <ProjectCard key={i} data={item} />
         )
     });
 

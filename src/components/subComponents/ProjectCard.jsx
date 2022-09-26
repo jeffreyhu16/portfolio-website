@@ -17,15 +17,16 @@ const Git = styled.a`
             fill: #dcdcdc
         }
     }
+    pointer-events: ${props => props.isPublic ? '' : 'none'};
 `
 
 export default function ProjectCard(props) {
 
-    const { name, description, tags, demo, github } = props.data;
+    const { name, description, tags, isPublic, demo, github } = props.data;
 
-    const tagsArray = tags.map((item, id) => {
+    const tagsArray = tags.map((item, i) => {
         return (
-            <span className='project-card-tag'>#{item}</span>
+            <span key={i} className='project-card-tag'>#{item}</span>
         )
     });
 
@@ -36,8 +37,8 @@ export default function ProjectCard(props) {
             <div className='project-card-tag-container'>{tagsArray}</div>
             <div className='project-card-footer'>
                 <Demo className='project-card-demo-link' href={demo} target='_blank'>Demo</Demo>
-                <Git className='project-card-github-link' href={github} target='_blank'>
-                    <Github />
+                <Git className='project-card-github-link' href={github} isPublic={isPublic} target='_blank'>
+                    <Github isPublic={isPublic} />
                 </Git>
             </div>
         </Box>
