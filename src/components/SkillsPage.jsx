@@ -86,12 +86,12 @@ export default function SkillsPage(props) {
                         </Bullet>
                         <div className="skills-point">Created Governance and ERC721 tokens with OpenZeppelin Contracts</div>
                     </div>
-                    {/* <div className="skills-point-container">
+                    <div className="skills-point-container">
                         <Bullet>
                             <BulletPoint />
                         </Bullet>
-                        <div className="skills-point">Integrated animations using Three.js with performance in mind</div>
-                    </div> */}
+                        <div className="skills-point">Built an NFT Gated Dapp using Typescript and Ethers.js</div>
+                    </div>
                 </Description>
             </Main>
             <LinkParticle />

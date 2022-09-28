@@ -28,7 +28,7 @@ export default function SocialIcons(props) {
                 rel='noreferrer'
                 href='https://github.com/jeffreyhu16'
             >
-                <Github fill={fillColor} />
+                <Github fill={fillColor} isPublic={true} />
             </a>
             <a
                 target='_blank'
