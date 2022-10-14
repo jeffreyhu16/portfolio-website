@@ -10,12 +10,12 @@ export const workData = [
     },
     {
         id:2,
-        name:"Material Price Tracker",
-        description:"Raw material price tracking app developed for a real restaurant chain. This prototype provides price updates from markets ranging from agriculture to seafood.",
-        tags:["React","Node.js","MySQL"],
+        name:"DEX",
+        description:"Decentralized exchange builit on the Goerli Testnet. This project is currently in the process of developing and will be fully functional soon.",
+        tags:["React","Ethers","Solidity"],
         isPublic: false,
-        demo:"http://preek.foresii.com/login",
-        github:"javascript:void(0)"
+        demo:"https://scintillating-bubblegum-656394.netlify.app",
+        github:"https://github.com/jeffreyhu16/dex-frontend"
     },
     {
         id:3,
@@ -34,5 +34,14 @@ export const workData = [
         isPublic: true,
         demo:"javascript:void(0)",
         github:"https://github.com/jeffreyhu16/insurance-project"
+    },
+    {
+        id:5,
+        name:"Material Price Tracker",
+        description:"Raw material price tracking app developed for a real restaurant chain. This prototype provides price updates from markets ranging from agriculture to seafood.",
+        tags:["React","Node.js","MySQL"],
+        isPublic: false,
+        demo:"http://preek.foresii.com/login",
+        github:"javascript:void(0)"
     },
 ];
