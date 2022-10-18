@@ -13,7 +13,7 @@ export const workData = [
         name:"DEX",
         description:"Decentralized exchange builit on the Goerli Testnet. This project is currently in the process of developing and will be fully functional soon.",
         tags:["React","Ethers","Solidity"],
-        isPublic: false,
+        isPublic: true,
         demo:"https://scintillating-bubblegum-656394.netlify.app",
         github:"https://github.com/jeffreyhu16/dex-frontend"
     },
